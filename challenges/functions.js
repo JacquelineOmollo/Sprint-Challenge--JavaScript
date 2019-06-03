@@ -17,17 +17,23 @@ console.log(lunch);
  * Create a function named multiply that returns the product of two numbers
  * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
  */
-function add(num1, num2, consume) {
+function add(num1, num2) {
   return num1 + num2;
 }
+let sum = add(3, 8);
+console.log(sum);
 
 function multiply(num3, num4) {
   return num3 * num4;
 }
+let product = multiply(20, 40);
+console.log(product);
 
 function greeting(first_name, last_name) {
   return `Hello ${first_name} ${last_name}, nice to meet you!`;
 }
+let greet = greeting("Phil", "Hart");
+console.log(greet);
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 //consume(2,2,add); // 4
 //consume(10,16,multiply); // 160
@@ -37,7 +43,7 @@ function greeting(first_name, last_name) {
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation:
+// Explanation: The nestedfunction() is nested in a closer that can inherit the arguments and variables scope of the internal and the outer function.
 
 const external = "I'm outside the function";
 
